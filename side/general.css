@@ -1,0 +1,121 @@
+/* Custom generic style */
+a {
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.wrapper {
+    width:100%;
+}
+
+.clickable:hover{
+    cursor:pointer;
+}
+.clickable{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+@media only screen and (min-width: 1280px) {
+    .wrapper {
+        width:1280px;
+        margin:0 auto;
+    }
+}
+@media only screen and (max-width: 1280px) {
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+    b, i,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section, summary,
+    time, mark, audio, video {
+        font-size:1.2vw;
+    }
+
+}
+/*blocs*/
+
+#topNav{
+    background-color:#2980b9;
+}
+#topNav a,topNav span{
+    color:white;
+    display:block;
+}
+
+#bigIndex{
+    background-color:#2980b9;
+}
+
+
+#bigIndex h1{
+    color:white;
+    text-align:center;
+    font-size:2.5em;
+    font-weight:100;
+    line-height: 1.5;
+    padding:3em 0 1em 0;
+}
+#bigIndex h2{
+    color:white;
+    text-align:center;
+    font-size:1.5em;
+    font-weight:100;
+    line-height: 1.5;
+    padding:0em 0 3em 0;
+}
+
+#bigIndex #logo img{
+    max-width:10vw;
+}
+@media only screen and (max-width: 1280px) {
+    #bigIndex #logo img{
+    margin:3vw;
+    }
+}
+#quickLinks{
+    padding:3em 0;
+}
+.flexbox{
+    display:flex;
+    flex-direction: row;
+}
+nav#quickLinks .flexbox a{
+    flex:1 1 auto;
+    text-align:center;
+    font-size:1.5em;
+    color:#2980b9;
+    font-weight: 100;
+}
+
+
+table.sortable{
+    margin:0;
+    width:100%;
+    text-align:center;
+}
+table.sortable thead th{
+    padding:0.5em 1em;
+    font-weight:bold;
+    color:white;
+    background-color:#303030;
+}
+table.sortable tbody td{
+    padding:0.5em 1em;
+}
+table.sortable tbody td:nth-child(2){
+    max-width:1100px;
+    text-align:left;
+}
+table.sortable tbody tr:nth-child(odd){
+background-color:#c0c0c0;}
