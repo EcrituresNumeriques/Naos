@@ -1,6 +1,6 @@
 <?php
 $configPassword = "dNh9h{E(\Qm5tB6>";
-include('config.ini.php');
+include('include/config.ini.php');
 $siteName = "Accueil";
 include("header.php");
 ?>

@@ -1,6 +1,6 @@
 <?php
 $configPassword = "dNh9h{E(\Qm5tB6>";
-include('config.ini.php');
+include('include/config.ini.php');
 $getJSON = $bdd->prepare("UPDATE `alignee` SET json = :json where id_alignee = :alignee");
 $getJSON->bindParam(":alignee",$_POST[alignee]);
 $getJSON->bindParam(":json",$_POST[json]);

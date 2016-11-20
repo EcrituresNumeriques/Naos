@@ -1,6 +1,6 @@
 <?php
 $configPassword = "dNh9h{E(\Qm5tB6>";
-include('config.ini.php');
+include('include/config.ini.php');
 $getJSON = $bdd->prepare("SELECT * FROM `alignee` where id_alignee = :alignee");
 $getJSON->bindParam(":alignee",$_GET[alignee]);
 $getJSON->execute() or die('erreur get JSON');
